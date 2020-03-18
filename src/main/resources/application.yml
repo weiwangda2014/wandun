@@ -1,0 +1,74 @@
+spring:
+  messages:
+    basename: classpath:/language/admin/message, classpath:/language/common/message, classpath:/language/shop/message
+    encoding: utf-8
+  aop:
+    auto: true
+    proxy-target-class: true
+  main:
+    allow-bean-definition-overriding: true
+  profiles:
+    active: dev
+  jackson:
+    time-zone: GMT+8
+    date-format: yyyy-MM-dd HH:mm:ss
+  resources:
+    static-locations: classpath:/
+  freemarker:
+    template-loader-path: classpath:/templates/
+    cache: false
+    charset: UTF-8
+    check-template-location: true
+    content-type: text/html; charset=UTF-8
+    expose-request-attributes: false
+    expose-session-attributes: false
+    suffix: .ftl
+    settings:
+      template_update_delay: 0
+      classic_compatible: true
+      tag_syntax: auto_detect
+      whitespace_stripping: true
+      number_format: 0.######
+      boolean_format: true,false
+      datetime_format: yyyy-MM-dd
+      date_format: yyyy-MM-dd
+      time_format: HH:mm:ss
+      url_escaping_charset: UTF-8
+  mvc:
+    static-path-pattern: /**
+  jpa:
+    hibernate:
+      ddl-auto: update
+      use-new-id-generator-mappings: false
+    show-sql: true
+    open-in-view: false
+    properties:
+      javax:
+        persistence:
+          sharedCache:
+            mode: ALL
+      hibernate:
+        enable_lazy_load_no_trans: true
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    timeout: 5000
+logging:
+  config: classpath:logback-spring.xml
+
+name: BOS SYSTEM
+version: 1.0
+copyright: "&copy; 2019-2025"
+author: 王玮
+logo: image/logo.png
+mode: false
+keywords: 22222
+description: 1111
+site: http://www.wandun.net/
+staticFile: .css,.js,.png,.jpg,.gif,.jpeg,.bmp,.ico,.swf,.psd,.htc,.htm,.html,.crx,.xpi,.exe,.ipa,.apk
+adminPath: /admin
+frontPath: /f
+prefix: /WEB-INF/views/
+suffix: .jsp
+demoMode: false
+urlSuffix: .html

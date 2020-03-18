@@ -1,0 +1,120 @@
+
+.page {
+    width: 21.59cm;
+    padding: 0;
+    margin: 0;
+    margin: 0 auto;
+}
+
+table {
+    margin: 0;
+    border: 0;
+    width: 18cm !important;
+    height: 6.5cm !important;
+    font-size: 14px;
+    border-collapse: collapse;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 0.2cm;
+}
+
+caption {
+    margin: 0;
+    border: 0;
+    text-align: center;
+    word-warp: break-word;
+    word-break: break-all;
+}
+
+td {
+    margin: 0;
+    border: 0;
+    text-align: center;
+    border: 1px solid #000;
+    text-align: center;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+th {
+    margin: 0;
+    border: 0;
+    border: 1px solid #000;
+    text-align: center;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+hr {
+    margin: 0;
+    border: 0;
+    border-top: 4px double #000;
+}
+
+@page {
+    width: 21.59cm;
+    height: 9.31cm;
+    margin: 0;
+}
+
+@media print {
+    html, body {
+        margin: 0;
+        padding: 0;
+        width: 21.59cm;
+        height: 9cm;
+    }
+
+    .page {
+        width: 21.59cm;
+        height: 9cm;
+        padding: 0;
+        margin: 0;
+        margin: 0 auto;
+    }
+
+    table {
+        margin: 0;
+        border: 0;
+        width: 18cm !important;
+        height: 6.5cm !important;
+        font-size: 14px;
+        border-collapse: collapse;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 0.2cm;
+    }
+
+    caption {
+        margin: 0;
+        border: 0;
+        text-align: center;
+        word-warp: break-word;
+        word-break: break-all;
+    }
+
+    td {
+        margin: 0;
+        border: 0;
+        text-align: center;
+        border: 1px solid #000;
+        text-align: center;
+        font-size: 14px;
+        font-weight: normal;
+    }
+
+    th {
+        margin: 0;
+        border: 0;
+        border: 1px solid #000;
+        text-align: center;
+        font-size: 14px;
+        font-weight: normal;
+    }
+
+    hr {
+        margin: 0;
+        border: 0;
+        border-top: 4px double #000;
+    }
+}
